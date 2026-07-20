@@ -17876,7 +17876,7 @@
 				renderUI();
 				loadVersionByUUID(currentConfig.UUID);
 				// 设置网页标题
-				document.title = `${currentConfig.优选订阅生成?.SUBNAME || 'edgetunnel'} 设置页面 - 管理后台`;
+				document.title = `${currentConfig.优选订阅生成?.SUBNAME || 'RAB'} 设置管理后台`;
 			} catch (error) {
 				updateVersionBadge('');
 				showToast('加载配置失败: ' + error.message, 'error');
