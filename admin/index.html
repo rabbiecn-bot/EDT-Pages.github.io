@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="robots" content="noindex, nofollow">
-	<title>管理web端</title>
+	<title>管理后台</title>
 	<script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/@keeex/qrcodejs-kx@1.0.2/qrcode.min.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10345,8 +10345,8 @@
 						<path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
 					</svg>
 				</button>
-				<!-- 主页链接 -->
-				<a href="https://login.realive.dpdns.org" target="_blank" rel="noopener" class="social-link"
+				<!-- GitHub 链接 -->
+				<a href="https://github.com/cmliu/edgetunnel" target="_blank" rel="noopener" class="social-link"
 					title="GitHub">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 						<path fill="currentColor"
@@ -17876,7 +17876,7 @@
 				renderUI();
 				loadVersionByUUID(currentConfig.UUID);
 				// 设置网页标题
-				document.title = `${currentConfig.优选订阅生成?.SUBNAME || 'RAB'} 设置管理后台`;
+				document.title = `${currentConfig.优选订阅生成?.SUBNAME || ''} 管理后台`;
 			} catch (error) {
 				updateVersionBadge('');
 				showToast('加载配置失败: ' + error.message, 'error');
