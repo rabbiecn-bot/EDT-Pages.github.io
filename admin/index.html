@@ -10389,7 +10389,7 @@
 	<div class="modal-overlay" id="versionInfoModal" onclick="closeVersionInfoModal(event)">
 		<div class="modal version-info-modal" onclick="event.stopPropagation()">
 			<button type="button" class="modal-close" onclick="closeVersionInfoModal()">×</button>
-			<h2 class="version-info-title">🚀 关于 edgetunnel</h2>
+			<h2 class="version-info-title">🚀 关于 EDT-Pages</h2>
 			<div class="version-info-summary state-outdated" id="versionInfoSummary">
 				<p id="latestVersionInfoText" class="version-info-line"><strong>最新版本:</strong> <span
 						id="latestVersionInfoValue">v0</span></p>
@@ -17876,7 +17876,7 @@
 				renderUI();
 				loadVersionByUUID(currentConfig.UUID);
 				// 设置网页标题
-				document.title = `${currentConfig.优选订阅生成?.SUBNAME || ''} 管理后台`;
+				document.title = `${currentConfig.优选订阅生成?.SUBNAME || 'EDT'} 管理后台`;
 			} catch (error) {
 				updateVersionBadge('');
 				showToast('加载配置失败: ' + error.message, 'error');
@@ -21529,7 +21529,7 @@
 					statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
 					statusEl.style.padding = '16px';
 					statusEl.style.borderRadius = '8px';
-					statusEl.innerHTML = '❌ <strong>后端版本过旧</strong><br/><small style="opacity: 0.9;">请升级 edgetunnel 代码</small>';
+					statusEl.innerHTML = '❌ <strong>后端版本过旧</strong><br/><small style="opacity: 0.9;">请升级 EDT 代码</small>';
 					document.getElementById('proxyConfirmBtn').disabled = true;
 					document.getElementById('proxyConfirmBtn').style.opacity = '0.5';
 				} else if (data.success === false) {
@@ -22068,7 +22068,7 @@
 
 				const data = await response.json();
 				if (!Object.prototype.hasOwnProperty.call(data, 'success')) {
-					showChainProxyStatus('❌ <strong>后端版本过旧</strong><br><small style="opacity: 0.9;">请升级 edgetunnel 代码</small>', 'error', true);
+					showChainProxyStatus('❌ <strong>后端版本过旧</strong><br><small style="opacity: 0.9;">请升级 EDT 代码</small>', 'error', true);
 					return;
 				}
 
