@@ -321,65 +321,24 @@
 		}
 
 		/* 页脚提示 */
-		/* 页脚提示 - 蓝色玻璃弹窗风格 */
-.footer-hint {
-	margin-top: 26px;
-	padding: 12px 18px;
+		.footer-hint {
+			margin-top: 30px;
+			font-size: 13px;
+			color: #9ca3af;
+			animation: fadeIn 1s ease-out 1.5s backwards;
+			text-align: center
+		}
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 6px;
+		.footer-hint a {
+			color: #faab41;
+			text-decoration: none;
+			font-weight: 500;
+			transition: color .3s ease
+		}
 
-	font-size: 13px;
-	line-height: 1.6;
-	color: #64748b;
-
-	background: rgba(255, 255, 255, 0.75);
-	border: 1px solid rgba(255, 255, 255, 0.8);
-	border-radius: 14px;
-
-	box-shadow:
-		0 8px 30px rgba(15, 23, 42, 0.08),
-		inset 0 1px 0 rgba(255,255,255,.9);
-
-	backdrop-filter: blur(12px);
-	-webkit-backdrop-filter: blur(12px);
-
-	animation: fadeIn 1s ease-out 1.5s backwards;
-}
-
-
-/* 链接按钮 */
-.footer-hint a {
-	padding: 3px 12px;
-
-	color: #2563eb;
-	font-weight: 600;
-	text-decoration: none;
-
-	background: rgba(37,99,235,.08);
-	border-radius: 20px;
-
-	transition: all .3s ease;
-}
-
-
-/* 鼠标效果 */
-.footer-hint a:hover {
-	color: #fff;
-
-	background: linear-gradient(
-		135deg,
-		#3b82f6,
-		#2563eb
-	);
-
-	box-shadow:
-		0 6px 15px rgba(37,99,235,.25);
-
-	transform: translateY(-1px);
-}
+		.footer-hint a:hover {
+			color: #f6821f
+		}
 
 		/* 模态框 */
 		.modal-overlay {
